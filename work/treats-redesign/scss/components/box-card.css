@@ -1,0 +1,33 @@
+.box-card {
+  @apply pt-[40px] pb-[50px] tablet:pt-[60px] tablet:pb-[100px] bg-white;
+}
+.box-card__item {
+  @apply bg-product-bg rounded-[15px] p-5 tablet:p-[30px];
+}
+.box-card__header h2 {
+  @apply font-header font-medium text-3xl text-light-blue mb-[22px] text-center;
+}
+.box-card__header p {
+  @apply font-text font-normal text-lg mb-[30px] text-center tablet:max-w-[546px] tablet:mx-auto;
+  color: rgba(45, 67, 87, 0.66);
+}
+.box-card__wrapper {
+  @apply tablet:flex gap-x-3 mb-5;
+}
+.box-card__inside {
+  @apply w-full mb-5 tablet:mb-0;
+}
+.box-card__inside input,
+.box-card__inside textarea,
+.box-card__inside select {
+  @apply rounded-[10px] bg-white px-5 py-4 w-full;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+.box-card__inside input:focus-visible,
+.box-card__inside textarea:focus-visible,
+.box-card__inside select:focus-visible {
+  @apply outline-none;
+}
+.box-card__inside label {
+  @apply block font-text text-sm font-medium text-light-blue mb-3 text-left capitalize;
+}

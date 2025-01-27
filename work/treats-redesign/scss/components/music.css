@@ -1,0 +1,58 @@
+.music {
+  @apply tablet:pt-[60px] tablet:pb-[100px];
+}
+.music__wrapper {
+  @apply flex;
+}
+.music__current {
+  @apply tablet:w-[783px] tablet:mr-4;
+}
+.music__current iframe {
+  @apply tablet:w-full tablet:h-[440px] rounded-[10px];
+}
+.music__description {
+  @apply tablet:mt-6 tablet:mb-11;
+}
+.music__description-wrapper {
+  @apply flex;
+}
+.music__description-inside {
+  @apply flex items-center;
+}
+.music__description-inside:first-of-type {
+  @apply mr-5;
+}
+.music__description-inside span {
+  @apply font-medium;
+}
+.music__description h4 {
+  @apply font-header font-medium tablet:text-3xl text-text-dark tablet:mb-[13px];
+}
+.music__side {
+  @apply tablet:w-[371px];
+}
+.music__side-item {
+  @apply tablet:mb-4;
+}
+.music__side-item iframe {
+  @apply w-full tablet:h-[208px] rounded-[10px] mb-[6px];
+}
+.music__side-item h5 {
+  @apply font-header font-medium text-base text-text-dark;
+}
+.music__icon {
+  @apply block mr-[10px];
+}
+.music__icon--calendar {
+  @apply bg-[url("../images/icon-calendar-black.png")] w-[14px] h-[14px] bg-no-repeat;
+}
+.music__icon--clock {
+  @apply bg-[url("../images/icon-clock.png")] w-[13px] h-[13px] bg-no-repeat;
+}
+.music__lyrics {
+  @apply font-medium text-base;
+  color: rgba(0, 0, 0, 0.66);
+}
+.music__lyrics h4 {
+  @apply font-header font-medium text-xl mb-[20px] text-text-dark;
+}

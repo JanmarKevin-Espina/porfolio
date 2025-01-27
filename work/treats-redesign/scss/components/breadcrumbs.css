@@ -1,0 +1,28 @@
+.breadcrumbs {
+  @apply text-center bg-primary py-[25px] tablet:py-[30px] text-text-light;
+}
+.breadcrumbs h2 {
+  @apply font-header font-semibold text-[26px] mb-[5px] tablet:text-[46px] leading-normal;
+}
+.breadcrumbs--w-img {
+  @apply relative overflow-hidden h-[100px] flex items-center justify-center tablet:h-[200px];
+}
+.breadcrumbs--w-img img {
+  @apply h-[117px] relative top-[13px] mr-[9px] tablet:h-[222px] tablet:mr-[28px] tablet:top-[26px];
+}
+.breadcrumbs--w-img h2 {
+  @apply leading-none text-[26px] tablet:text-[56px] mb-0;
+}
+.breadcrumbs__list {
+  @apply flex justify-center items-center;
+}
+.breadcrumbs__item {
+  @apply relative px-2 tablet:text-xs;
+}
+.breadcrumbs__item::before {
+  @apply absolute -left-[3px];
+  content: "/";
+}
+.breadcrumbs__item:first-of-type::before {
+  content: "";
+}

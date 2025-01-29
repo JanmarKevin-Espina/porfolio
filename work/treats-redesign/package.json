@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "compilePug": "pug -w ./coding/pug -o ./coding/html -P",
+    "compilePug": "pug -w ./pug -o ./",
     "compileSass": "sass --watch ./coding/scss/app.scss ./coding/css/input.css",
     "compileCss": "npx tailwindcss -i ./coding/css/input.css -o ./coding/css/style.css --watch",
     "serve": "live-server --port=4000 --quiet --open=/coding/html/"

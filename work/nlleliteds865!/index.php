@@ -1,0 +1,287 @@
+<!--?php @session_start();
+get_includes('head');
+get_includes('header');
+get_includes('nav');
+get_includes('banner');
+?-->
+<!--?php if ( is_front_page() ) { get_includes('middle'); }?-->
+
+<!DOCTYPE html>
+<!--[if lt IE 10]>      <html class="no-js lt-ie11 lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 10]>         <html class="no-js lt-ie11 lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 11]>         <html class="no-js lt-ie11"> <![endif]-->
+<!--[if gt IE 11]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+
+	<title><?php //echo get_bloginfo('name');?>CompanyName</title>
+
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/hamburgers.min.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/rslides.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/skitter.styles.css" type="text/css" media="all"  />
+
+	<!--?php wp_head(); ?-->
+</head>
+	<body>
+		<div class="protect-me">
+		<div class="clearfix">
+
+<!-- Header -->
+<header>
+	<div class="wrapper">
+		<div class="header_con">
+			<div class="main_logo">
+			  <a href="<?php //echo get_home_url(); ?>"><figure><img src="images/main-logo.png" alt="<?php //echo get_bloginfo('name');?>"/></figure></a>
+			</div>
+			
+			<div class="header_wrapper">
+				
+			<div class="head_info">
+				<div class="header_info">
+					<h2>Phone: <span><mark>267-270-5071</mark></span></h2>
+					<q>|</q>
+					<h2>Email: <span><a href="mailto:nllelitefc@gmail.com">nllelitefc@gmail.com</a></span></h2>
+				</div>
+				<div class="social_media">
+					<h2>Stay Connected:</h2>
+					<ul>
+						<li><a href="https://www.facebook.com" target="_blank"><figure><img src="images/facebook-icon.png" alt="facebook"/></figure></a></li>
+						<li><a href="https://www.twitter.com" target="_blank"><figure><img src="images/twitter-icon.png" alt="twitter"/></figure></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<!-- Navigation -->
+			<div id="nav_area">
+				<div class="nav_toggle_button">
+				<div class="logo_wrap"></div>
+					<div class="toggle_holder">
+						<div class="hamburger hamburger--spin-r">
+						<div class="hamburger-box">
+							<div class="hamburger-inner"></div>
+						</div>
+						</div>
+						<small>Menu</small>
+					</div>
+				<div class="clearfix"></div>
+				</div>
+
+				<div class="toggle_right_nav">
+				<nav class="page_nav">
+						<div class="menu_slide_right">
+							<a href="<?php //echo get_home_url(); ?>" class="logo_slide_right"><figure><img src="images/main-logo.png" alt="<?php //echo get_bloginfo('name');?>"/></figure></a>
+							<div class="toggle_holder">
+								<div class="hamburger hamburger--spin-r">
+								<div class="hamburger-box">
+									<div class="hamburger-inner"></div>
+								</div>
+								</div>
+								<small>Close</small>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+
+							<!--?php wp_nav_menu( array( 'container_class' => 'nav-menu', 'theme_location' => 'primary', 'after' => '<span><i class="fa fa-2x">&nbsp;&nbsp;&nbsp;&nbsp;</i></span>') ); ?-->
+							<ul>
+								<li class="current_page_item"><a href="">Home</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">facility</a></li>
+								<li><a href="#">Gallery</a></li>
+								<li><a href="#">Alumni</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+				</nav>
+					<div class="toggle_nav_close"></div>
+				</div>
+			</div>
+			<!-- End Navigation -->
+
+			</div>
+		</div>
+	  <div class="clearfix"></div>
+	</div>
+</header>
+<!-- End Header -->
+
+<!-- Banner -->
+<div id="banner">
+	<div class="wrapper">
+		<div class="bnr_con">
+
+			<div class="slider">
+				<ul class="rslides">
+					<li><figure><img src="images/slider/1.jpg" alt=""/></figure></li>
+					<li><figure><img src="images/slider/2.jpg" alt=""/></figure></li>
+					<li><figure><img src="images/slider/3.jpg" alt=""/></figure></li>
+				</ul>
+			</div>
+
+			<div class="bnr_info">
+				<h2>Prepared for <span>greatness</span></h2>
+				<p>We are excited to post contents on the website. This space is reserved for more information about the company.</p>
+				<a href="javascript:;">Learn More</a>
+			</div>
+
+		</div>
+	</div>
+</div>
+<!-- End Banner -->
+
+<!-- Middle -->
+<div id="middle">
+	<div class="wrapper">
+		<div class="middle_con">
+			<h2>we put players first!</h2>	
+			<p>Dummy texts are for display purposes to show the content soon.</p>
+			<a href="#">Click here to Register</a>
+		</div>
+	</div>
+</div>
+<!-- End Middle -->
+
+<!-- Main -->
+<div id="main_area">
+	<div class="wrapper">
+		<div class="main_con">
+			<main>
+				<h1 class="h1_title"><span>Welcome to </span>NLL Elite Football Club</h1>
+				<p>These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page. These dummy texts are for display purposes only to show the content on this page.</p>
+				<p>These dummy texts are for display purposes only to show the volume of content that will be placed on this particular page. These texts are temporary and will soon be replaced.</p>
+			</main>
+			<aside class="sidebar">
+				<figure><img src="images/main-bg.jpg" alt="two girls playing football"></figure>
+			</aside>
+		</div>
+
+	<div class="clearfix"></div>
+	</div>
+</div>
+<!-- End Main -->
+
+<!-- Bottom -->
+<div id="bottom1">
+	<div class="wrapper">
+		<div class="btm1_con">
+			<!-- <div class="btm1_bg">
+				<figure><img src="images/btm1-bg.jpg" alt="boys playing football"></figure>
+			</div> -->
+			<div class="btm1_info">
+				<h2><span>what we do</span> Services <small>We Offer</small></h2>
+				<p>Words shown on this layout are placeholders.soon.</p>
+				<ul>
+					<li>Tournaments</li>
+					<li>Camps</li>
+					<li>Clinics</li>
+					<li>7v7 Teams</li>
+					<li>Training</li>
+				</ul>
+				<a href="#">View More Services</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="bottom2">
+	<div class="wrapper">
+		<div class="btm2_con">
+			<h2>Send Us a Message</h2>
+			<form action="#">
+				<input type="text" placeholder="Full Name" required="">
+				<input type="text" placeholder="Email Address" required="">
+				<input type="text" placeholder="Message(s)">
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+		<div class="btm2_info">
+			<h2><span>OUR COMMITMENT</span>Mission Statement</h2>
+			<p>This space is reserved for more information about the company. These dummy text is intended to show you the volume of content that will be used on this particular page.  Thank you for visiting our website.</p>
+			<a href="#">Learn More</a>
+		</div>
+	</div>
+</div>
+<!-- End Bottom -->
+
+<!--Footer -->
+<footer>
+<div class="footer_top">
+	<div class="wrapper">
+		<div class="footer_wrapper">
+		<div class="footer_top_con">
+			<div class="footer_logo">
+				<a href="<?php //echo get_home_url(); ?>"><figure><img src="images/main-logo.png" alt="<?php //echo get_bloginfo('name');?>"></figure></a>
+			</div>
+			<p>Words shown on this layout are placeholders. This space is reserved for more details about the company.</p>
+			<div class="copyright">
+				  &copy; Copyright
+						<?php
+						$start_year = '2021';
+						$current_year = date('Y');
+						$copyright = ($current_year == $start_year) ? $start_year : $start_year.' - '.$current_year;
+						echo $copyright;
+						?>
+				  <p>Web Design by <a href="http://proweaver.com" target="_blank" rel="nofollow">Proweaver</a></p>
+			</div>
+		</div>
+
+		<div class="footer_btm_con">
+			<div class="footer_info">
+				<h2>Contact Information</h2>
+				<ul>
+					<li>
+						<p>Phone: <mark>267-270-5071</mark></p>
+						<p>Email: <span><a href="mailto:nllelitefc@gmail.com">nllelitefc@gmail.com</a></span></p>
+					</li>
+					<li>
+						<p><address>MSI Sports Village 4841 Chichester Ave. <span>Aston, PA 19014</span></address></p>
+					</li>
+				</ul>
+			</div>
+				<div class="footer_nav">
+					<ul>
+						<li class="current_page_item"><a href="index.php">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Resources</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</footer>
+
+	<span class="back_top"></span>
+
+  </div> <!-- End Clearfix -->
+  </div> <!-- End Protect Me -->
+
+  <!--?php get_includes('ie');?-->
+
+  <!--
+  Solved HTML5 & CSS IE Issues
+  -->
+  <script src="js/modernizr-custom-v2.7.1.min.js"></script>
+  <script src="js/jquery-2.1.1.min.js"></script>
+
+  <!--
+  Solved Psuedo Elements IE Issues
+  -->
+  <script src="js/calcheight.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.skitter.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <!--?php wp_footer(); ?-->
+</body>
+</html>
+<!-- End Footer -->

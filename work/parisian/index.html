@@ -1,0 +1,361 @@
+<!--?php @session_start();
+get_includes('head');
+get_includes('header');
+get_includes('nav');
+get_includes('banner');
+?-->
+<!--?php if ( is_front_page() ) { get_includes('middle'); }?-->
+
+<!DOCTYPE html>
+<!--[if lt IE 10]>      <html class="no-js lt-ie11 lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 10]>         <html class="no-js lt-ie11 lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 11]>         <html class="no-js lt-ie11"> <![endif]-->
+<!--[if gt IE 11]><!--> <html class="no-js" lang="en-US"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+
+	<title>Parisian</title>
+
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/hamburgers.min.css">
+	<link rel="stylesheet" href="css/media.min.css">
+	<link rel="stylesheet" href="css/rslides.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/skitter.styles.css" type="text/css" media="all"  />
+
+	<!--?php wp_head(); ?-->
+</head>
+	<body>
+		<div class="protect-me">
+		<div class="clearfix">
+
+<!-- Header -->
+<header>
+	<div class="wrapper">
+		<div class="header_con">
+			<div class="search_bar">
+				<form action="#">
+					<input type="text" placeholder="Search">
+				</form>
+			</div>
+			<div class="main_logo">
+			  <a href="<?php //echo get_home_url(); ?>"><figure><img src="images/main-logo.png" alt="<?php //echo get_bloginfo('name');?>"/></figure></a>
+			</div>
+			<div class="cart_price">
+				<p>2 Items <q>/</q> <span>$120.00</span></p>
+			</div>
+		</div>
+	  <div class="clearfix"></div>
+	</div>
+</header>
+<!-- End Header -->
+
+<!-- Navigation -->
+<div id="nav_area">
+	<div class="nav_toggle_button">
+	<div class="logo_wrap"></div>
+		<div class="toggle_holder">
+			<div class="hamburger hamburger--spin-r">
+			  <div class="hamburger-box">
+				<div class="hamburger-inner"></div>
+			  </div>
+			</div>
+			<small>Menu</small>
+		</div>
+	<div class="clearfix"></div>
+	</div>
+
+	<div class="toggle_right_nav">
+	  <nav class="page_nav">
+			<div class="menu_slide_right">
+				<a href="<?php //echo get_home_url(); ?>" class="logo_slide_right"><figure><img src="images/main-logo.png" alt="<?php //echo get_bloginfo('name');?>"/></figure></a>
+				<div class="toggle_holder">
+					<div class="hamburger hamburger--spin-r">
+					  <div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					  </div>
+					</div>
+					<small>Close</small>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+
+			<div class="wrapper">
+				<!--?php wp_nav_menu( array( 'container_class' => 'nav-menu', 'theme_location' => 'primary', 'after' => '<span><i class="fa fa-2x">&nbsp;&nbsp;&nbsp;&nbsp;</i></span>') ); ?-->
+				<ul>
+					<li class="current_page_item"><a href="">Home</a></li>
+					<li><a href="">Our shop</a></li>
+					<li><a href="">Our products</a></li>
+					<li><a href="">On sale</a></li>
+					<li><a href="">New arrivals</a></li>
+					<li><a href="">Contact us</a></li>
+				</ul>
+			</div>
+	  </nav>
+		<div class="toggle_nav_close"></div>
+	</div>
+</div>
+<!-- End Navigation -->
+
+<!-- Banner -->
+<div id="banner">
+	<div class="wrapper">
+		<div class="bnr_con">
+		<!-- <div class="slider slider_1">
+				<ul class="rslides">
+					<li><figure><img src="images/slider/1.jpg" alt=""/></figure></li>
+					<li><figure><img src="images/slider/2.jpg" alt=""/></figure></li>
+					<li><figure><img src="images/slider/3.jpg" alt=""/></figure></li> -->
+		<div class="product">
+			<section class="product_col1">
+				<figure><img src="images/banner-1.jpg" alt="humidifier"></figure>
+				<div class="bnr_info1">
+				<h2>the scent of luxury</h2>
+				<a href="javascript:;">Shop now</a>
+			</div>
+			</section>
+			<section class="product_col2">
+				<figure><img src="images/banner-2.jpg" alt="multiple base"></figure>
+				<div class="bnr_info1">
+				<h2>discount cards</h2>
+				<a href="javascript:;">Click here</a>
+				</div>
+			</section>
+		</div>
+
+			<!-- <div class="mobi_ban">
+				<figure><img src="images/slider/1.jpg" alt=""></figure>
+			</div> -->
+		</div>
+	</div>
+</div>
+<!-- End Banner -->
+
+<!-- Middle -->
+<div id="middle">
+	<div class="wrapper">
+		<div class="middle_con">
+			<div class="middle-bg">
+				<figure><img src="images/middle-bg.jpg" alt="pink background with flower each sides"></figure>
+			</div>
+			<div class="middle_info">
+				<h2>Save up to <span>12%</span> everyday on all products</h2>
+				<a href="#">Click Here</a>
+			</div>
+			<div class="middle_nav">
+				<ul>
+					<li><a href="#">candles</a></li>
+					<li><a href="#">bath salts</a></li>
+					<li><a href="#">wall plug-ins</a></li>
+					<li><a href="#">room sprays</a></li>
+				</ul>
+			</div>
+
+			<div class="middle_boxes">
+				<section class="mid_box1">
+					<figure><img src="images/scents-bg.png" alt="candle"></figure>
+					<div class="mid_box_info">
+						<h2>Dummy Item Name</h2>
+						<a href="javascript:;">View Details</a>
+					</div>
+				</section>
+
+				<section class="mid_box2">
+					<figure><img src="images/rice-bg.jpg" alt="rice with spoon"></figure>
+					<div class="mid_box_info">
+						<h2>Dummy Item Name</h2>
+						<a href="javascript:;">View Details</a>
+					</div>
+				</section>
+				<section class="mid_box3">
+					<figure><img src="images/socket-bg.png" alt="socket"></figure>
+					<div class="mid_box_info">
+						<h2>Dummy Item Name</h2>
+						<a href="javascript:;">View Details</a>
+					</div>
+				</section>
+				<section class="mid_box4">
+					<figure><img src="images/perfume-bg.png" alt="perfume"></figure>
+					<div class="mid_box_info">
+						<h2>Dummy Item Name</h2>
+						<a href="javascript:;">View Details</a>
+					</div>
+				</section>
+
+				<section class="mid_box5">
+					<figure><img src="images/scents-bg.png" alt="candle"></figure>
+					<div class="mid_box_info">
+						<h2>Dummy Item Name</h2>
+						<a href="javascript:;">View Details</a>
+					</div>
+				</section>
+
+				<section class="mid_box6">
+					<figure><img src="images/rice-bg.jpg" alt="rice with spoon"></figure>
+					<div class="mid_box_info">
+						<h2>Dummy Item Name</h2>
+						<a href="javascript:;">View Details</a>
+					</div>
+				</section>
+			</div>
+			<a class="mid_items_btn" href="#">View all items</a>
+		</div>
+	</div>
+</div>
+<!-- End Middle -->
+
+<!-- Main -->
+<div id="main_area">
+	<div class="wrapper">
+		<div class="main_con">
+			<main>
+				<div class="main_con_info">
+					<h1 class="h1_title"><span>Welcome to </span>Parisian Scents</h1>
+					<p>
+					Contents are for display purposes only. You are reading dummy texts as placeholder for this layout. This space is reserved for more details about the company. Contents are for display purposes only. Contents are for display purposes only. You are reading dummy texts as placeholder for this layout.
+					</p>
+				</div>
+			</main>
+		</div>
+
+	<div class="clearfix"></div>
+	</div>
+</div>
+<!-- End Main -->
+
+<!-- Bottom -->
+<div id="bottom1">
+	<div class="wrapper">
+		<div class="btm1_con">
+			<div class="btm1_boxes">
+				<section class="btm1_box1">
+					<figure><img src="images/btm1-bg1.jpg" alt="women holding beauty products"></figure>
+					<h2><span>sub-heading texts</span>delivery policy</h2>
+					<p>This space is reserved for more details about the company.</p>
+					<a href="javascript:;">Click Here</a>
+				</section>
+
+				<section class="btm1_box2">
+					<figure><img src="images/btm1-bg2.jpg" alt="variety ingredients"></figure>
+					<h2><span>sub-heading texts</span>gift cards</h2>
+					<p>This space is reserved for more details about the company.</p>
+					<a href="javascript:;">Click Here</a>
+				</section>
+
+				<section class="btm1_box3">
+					<figure><img src="images/btm1-bg3.jpg" alt="girl thumbs up"></figure>
+					<h2><span>sub-heading texts</span>recommend us</h2>
+					<p>This space is reserved for more details about the company.</p>
+					<a href="javascript:;">Click Here</a>
+				</section>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="bottom2">
+	<div class="wrapper">
+		<div class="btm2_con">
+			<div class="btm2_info">
+				<h2>Send us a message</h2>
+				<p>You are reading dummy text for this layout. Dummy text for the reader to review. Words shown on this layout are placeholders.</p>
+			</div>
+			<form action="">
+				<input type="text" placeholder="Full Name" required><input type="text" placeholder="Email Address" required><input type="text" placeholder="Message">
+				<a href="#" type="submit">Submit</a>
+			</form>
+		</div>
+	</div>
+</div>
+<!-- End Bottom -->
+
+<!--Footer -->
+<footer>
+<div class="footer_top">
+	<div class="wrapper">
+		<div class="footer_top_con">
+			<div class="contact_info">
+				<ul>
+					<li><span>Address: <address>123 Street Name, Suite 12</address></span>
+						<address>City Name, Michigan 12345</address>
+					<li>Phone number: <span><mark>844-500-WICK</mark></span></li>
+					<li>Email Address: <span><a href="mailto:Parisianscents@yahoo.com">Parisianscents@yahoo.com</a></span></li>
+				</ul>
+			</div>
+			
+			<div class="copy">
+				<div class="footer_comp"><?php //echo get_bloginfo('name');?>Parisian Scents</div>
+					<span class="copyright">
+				  		&copy; Copyright
+							<span id="year"></span> All rights reserved
+					</span>
+			</div>
+			<div class="social_media">
+				<ul>
+					<li><a href="https://www.facebook.com/Parisian-Scents-111103580755781" target="_blank"><figure><img src="images/fb-icon.png" alt="facebook"/></figure></a></li>
+					<li><a href="https://www.instagram.com/parisianscents/" target="_blank"><figure><img src="images/twitter-icon.png" alt="instagram"/></figure></a></li>
+				</ul>
+			</div>
+			<!-- <div class="footer_logo">
+				<a href="<?php //echo get_home_url(); ?>"><figure><img src="images/footer-logo.png" alt="<?php //echo get_bloginfo('name');?>"></figure></a>
+			</div> -->
+		</div>
+	</div>
+</div>
+
+<div class="footer_btm">
+  <div class="wrapper">
+			<div class="footer_btm_con">
+				<div class="footer_nav">
+					<ul>
+						<li class="current_page_item"><a href="index.php">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Resources</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+				<div class="footer_cards">
+						<ul>
+							<li><a href="#"><figure><img src="images/card-icon3.png" alt="paypal card"></figure></a></li>
+							<li><a href="#"><figure><img src="images/card-icon4.png" alt="master card"></figure></a></li>
+							<li><a href="#"><figure><img src="images/card-icon2.png" alt="visa card"></figure></a></li>
+							<li><a href="#"><figure><img src="images/card-icon1.png" alt="discover card"></figure></a></li>
+							<li><a href="#"><figure><img src="images/card-icon.png" alt="american express card"></figure></a></li>
+						</ul>
+				</div>
+			</div>
+		</div>
+</div>
+</footer>
+
+	<span class="back_top"></span>
+
+  </div> <!-- End Clearfix -->
+  </div> <!-- End Protect Me -->
+
+  <!--?php get_includes('ie');?-->
+
+  <!--
+  Solved HTML5 & CSS IE Issues
+  -->
+  <script src="js/modernizr-custom-v2.7.1.min.js"></script>
+  <script src="js/jquery-2.1.1.min.js"></script>
+
+  <!--
+  Solved Psuedo Elements IE Issues
+  -->
+  <script src="js/calcheight.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.skitter.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
+  <script src="js/plugins.js"></script>
+	<script src="../../js/custom.js"></script>
+  <!--?php wp_footer(); ?-->
+</body>
+</html>
+<!-- End Footer -->
